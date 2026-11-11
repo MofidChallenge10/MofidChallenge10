@@ -1,0 +1,35 @@
+# Profile configuration for MofidChallenge10
+# Edit the values below to keep your README details in one place.
+
+profile:
+  username: MofidChallenge10
+  tagline: "Python • Bash • Git • Open Source"
+  location: ""        # e.g. "Tehran, Iran"
+  languages: [fa, en]
+
+theme:
+  # Colors used by the animated SVGs in /assets
+  primary: "#7ee8fa"
+  secondary: "#eec0c6"
+  background_start: "#0f2027"
+  background_end: "#2c5364"
+  card_theme: tokyonight   # used by github-readme-stats cards
+
+skills:
+  - python
+  - bash
+  - git
+  - github
+  - linux
+  - vscode
+
+featured_repos:
+  - file-organizer
+  - git-cheatsheet-fa
+  - handy-bash-scripts
+
+social:
+  github: https://github.com/MofidChallenge10
+  email: ""
+  telegram: ""
+  linkedin: ""
