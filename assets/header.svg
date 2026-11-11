@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240" role="img" aria-label="MofidChallenge10 header">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f2027"/>
+      <stop offset="0.5" stop-color="#203a43"/>
+      <stop offset="1" stop-color="#2c5364"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7ee8fa"/>
+      <stop offset="1" stop-color="#eec0c6"/>
+    </linearGradient>
+    <clipPath id="round"><rect width="900" height="240" rx="18"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#round)">
+    <rect width="900" height="240" fill="url(#bg)"/>
+
+    <!-- floating dots -->
+    <circle cx="120" cy="60" r="4" fill="#7ee8fa" opacity="0.6">
+      <animate attributeName="cy" values="60;40;60" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="780" cy="80" r="5" fill="#eec0c6" opacity="0.6">
+      <animate attributeName="cy" values="80;55;80" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="690" cy="35" r="3" fill="#ffffff" opacity="0.5">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="210" cy="30" r="3" fill="#ffffff" opacity="0.5">
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- title -->
+    <text x="450" y="105" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="url(#title)">
+      MofidChallenge10
+      <animate attributeName="opacity" values="0;1" dur="1.2s" fill="freeze"/>
+    </text>
+
+    <!-- rotating subtitles -->
+    <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" fill="#e6f1f5" text-anchor="middle">
+      <text x="450" y="148" opacity="0">Python Developer
+        <animate attributeName="opacity" values="0;1;1;0;0;0;0" keyTimes="0;0.08;0.28;0.36;0.7;0.9;1" dur="9s" repeatCount="indefinite"/>
+      </text>
+      <text x="450" y="148" opacity="0">Bash &amp; Automation Lover
+        <animate attributeName="opacity" values="0;0;0;1;1;0;0" keyTimes="0;0.3;0.34;0.42;0.62;0.7;1" dur="9s" repeatCount="indefinite"/>
+      </text>
+      <text x="450" y="148" opacity="0">Open Source Enthusiast
+        <animate attributeName="opacity" values="0;0;0;0;1;1;0" keyTimes="0;0.6;0.66;0.7;0.78;0.94;1" dur="9s" repeatCount="indefinite"/>
+      </text>
+    </g>
+
+    <!-- waves -->
+    <path fill="#7ee8fa" opacity="0.18"
+      d="M0 190 Q75 160 150 190 T300 190 T450 190 T600 190 T750 190 T900 190 T1050 190 T1200 190 V240 H0 Z">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-300 0" dur="8s" repeatCount="indefinite"/>
+    </path>
+    <path fill="#eec0c6" opacity="0.16"
+      d="M-300 205 Q-225 175 -150 205 T0 205 T150 205 T300 205 T450 205 T600 205 T750 205 T900 205 V240 H-300 Z">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="300 0" dur="11s" repeatCount="indefinite"/>
+    </path>
+    <path fill="#0f2027" opacity="0.5"
+      d="M0 222 Q75 202 150 222 T300 222 T450 222 T600 222 T750 222 T900 222 T1050 222 T1200 222 V240 H0 Z">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-300 0" dur="5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>
